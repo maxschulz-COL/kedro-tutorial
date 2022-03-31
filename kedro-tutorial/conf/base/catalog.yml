@@ -16,3 +16,11 @@ shuttles:
   filepath: data/01_raw/shuttles.xlsx
   load_args:
     engine: openpyxl # Use modern Excel engine, will be default in Kedro 0.18.0
+
+preprocessed_companies:
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/preprocessed_companies.pq
+
+preprocessed_shuttles:
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/preprocessed_shuttles.pq
